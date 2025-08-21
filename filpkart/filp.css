@@ -442,6 +442,72 @@ a, img {
     display: inline-block;
 }
 
+.cleard {
+    cursor: pointer;
+    color:#2874f0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.clr-box {
+    position: relative;
+    max-height: 104px;
+    overflow: hidden;
+}
+
+.clr-box .sct {
+    margin: 8px 0 0 -4px;
+}
+
+.box-clr {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 4px 0 hsla(0,0%,100%,5);
+    border-radius: 3px;
+    margin: 2px 4px;
+    overflow: hidden;
+    transition: background-color .1s;
+    max-width: 200px;
+    padding: 8px;
+}
+
+.box-clr .bx-note {
+    display: inline-block;
+}
+
+.box-clr .box-txt {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: bottom;
+    margin-left: 8px;
+    max-width: 90%;
+    display: inline-block;
+}
+
+.clr-box
+.boxs .msg {
+    position: absolute;
+    background: #fff;
+    top: 82px;
+}
+
+.clr-box .msg {
+    width: 100%;
+}
+
+.boxs {
+    font-size: 12px;
+    font-weight: 500;
+    color: #2874f0;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
 .category {
     font-size: 14px;
 }
@@ -1027,7 +1093,9 @@ a, img {
 
     .menu-item {
       position: relative;
-      margin: 0 12px;
+      /* margin: 0 12px; */
+      color: white;
+      font-size: 15px;
       cursor: pointer;
     }
 
@@ -1037,20 +1105,31 @@ a, img {
       top: 100%;
       left: 0;
       background: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      min-width: 180px;
-      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      min-width: 150px;
+      border: 1px solid #ddd;
     }
 
     .dropdown a {
       display: block;
       padding: 10px;
       text-decoration: none;
-      color: #333;
+      color: #212121;
+    }
+
+    .dropdown a {
+        display: block;
+        padding: 10px;
+        text-decoration: nonel;
+        background:rgb( 255, 255, 255)
     }
 
     .dropdown a:hover {
-      background: #f2f2f2;
+      background: #f5f5f5;
+    }
+
+    .show {
+        display: block;
     }
 
     .menu-item.active .dropdown {
@@ -1270,7 +1349,7 @@ button:hover {
     display: inline-block;
 }
 
-/* .product-grid {
+.product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 16px;
@@ -1442,7 +1521,7 @@ button:hover {
   font-weight: 600; 
 }
 
-product-card:hover {
+.product-card:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
@@ -1631,11 +1710,11 @@ product-card:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #fff;  
+  border: 1px solid #ddd;    
   border-radius: 4px;
   margin-top: 5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);   
   z-index: 99;
 }
 
@@ -1653,6 +1732,95 @@ product-card:hover {
   display: block;
 }
 
+.page-section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 6px;
+    font-family: Arial, sans-serif;
+}
+.page-section a,
+.page-section button {
+    padding: 8px 14px;
+    text-decoration: none;
+    border: 1px solid #ddd; 
+    cursor: pointer;
+    color: #2874f0;
+    background: #fff; 
+    font-size: 14px;
+    border-radius: 2px;
+  }
+
+.page-section a:active {
+    background: #2874f0;
+    color: #fff;
+    border: 1px solid #2874f0;
+    font-weight: bold;
+}
+
+.page-section button:hover,
+.page-section a:hover {
+    background: #f0f577;;
+}
+
+.page-section span {
+    padding: 8px 10px;
+    color: #555;
+}
+
+.feedback {
+    margin: 30px 0;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.feedback p {
+    font-size: 15px;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.feed {     
+    padding: 8px 16px;
+    margin: 0 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    font-size:  14px;
+    border-radius: 4px;
+    transition: all 0.7s ease;
+}
+
+.feed:hover {
+    background: #f5f5f5;
+}
+.feedback-btn:hover {
+  background: #f5f5f5;
+}
+
+.feedback-btn.yes {
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+.feedback-btn.yes:hover {
+  background: #e8f5e9;
+}
+
+.feedback-btn.no {
+  color: #c62828;
+  border: 1px solid #c62828; 
+}
+
+.feedback.no:hover {
+  background: #ffebee;
+}
+
+.feed.yes {
+    color:#2e7d32;
+    border: 1pxmsolid 
+}
 .footer {
     background: #172337;
     color: #fff;
@@ -1685,6 +1853,9 @@ product-card:hover {
   text-decoration: underline;
 }
 
+.footer-column .teleno {
+  color: #2874f0;
+}
 .footer-bottom {
   border-top: 1px solid #454d5e;
   padding-top: 20px;
@@ -1694,5 +1865,5 @@ product-card:hover {
 }
 
 .footer-bottom .right img {
-  height: 24px;
-}
+  height: 24px;     
+}}
