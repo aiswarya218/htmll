@@ -1111,8 +1111,8 @@
     <div class = "description">
       <p>Food is the source of life, and our whole life revolves around it. Every living organism needs food products to survive, and you can get your essential food items delivered to you from online shopping websites. From breakfast cereals and energy bars to pulses and spices, online stores are the one-stop destination for all your grocery needs. On e-stores, you can easily find confectionery products, 
       </p>
-      <a href = "#">edible oil</a>, ready-meals and mixes, dairy products, food combos, jams and marmalade, vegetables, noodles, soups, dry fruits, 
-      <a href = "#">namkeens</a>, biscuits, aerated drinks, teas, coffees, rice, pickles, chocolates, fruits, herbs and seasonings, eggs, meats, seafood, paneer, sweets, bakery products, and milk powder, among many other edibles that are needed in your kitchen to eat healthy, homemade food. On online grocery stores, you can use filters to find the products that you need or use the search bar to find the products that your kitchen is missing. These stores are the best places to find all the products offered by various brands. There is also product information related to their ingredients, user reviews, and ratings that you can check before placing your order. You can also compare the prices of different food products before making a purchase. So, log on to your favorite e-store, and buy groceries while chilling on your couch.
+      <a href = "#" class = "food">edible oil</a>, ready-meals and mixes, dairy products, food combos, jams and marmalade, vegetables, noodles, soups, dry fruits, 
+      <a href = "#" class = "food">namkeens</a>, biscuits, aerated drinks, teas, coffees, rice, pickles, chocolates, fruits, herbs and seasonings, eggs, meats, seafood, paneer, sweets, bakery products, and milk powder, among many other edibles that are needed in your kitchen to eat healthy, homemade food. On online grocery stores, you can use filters to find the products that you need or use the search bar to find the products that your kitchen is missing. These stores are the best places to find all the products offered by various brands. There is also product information related to their ingredients, user reviews, and ratings that you can check before placing your order. You can also compare the prices of different food products before making a purchase. So, log on to your favorite e-store, and buy groceries while chilling on your couch.
     </p>
     </div>
    </div>
@@ -1120,17 +1120,17 @@
       <span>"chocolates"</span>
       </span>
    <div class = "sort-bar">
-     <span class = "active-sort">Sort By</span>
-    <div class = "active_section">Relevance</div>
+    <span class = "active-sort">Sort By</span>    
+    <div class = "active _section">Relevance</div>
     <div class = "active">Popularity</div>
     <div class = "active">Price -- Low to High</div>
     <div class = "active">Price -- High to Low</div>
     <div class = "active">Newest First</div>
+    </div>
      </div>
     </div>
    </div>
  </div>
-</div>
 
 <section class="product-section">
   <div id="product-list" class="product-grid"></div>
@@ -1143,18 +1143,19 @@
   menuLinks.forEach(link => {
     const megaMenu = link.querySelector(".mega-menu");
 
+
     if (megaMenu) {
       link.addEventListener("mouseenter", () => {
-        megaMenu.style.display = "grid";
+        megaMenu.style.display = "grid"; 
       });
 
-      link.addEventListener("mouseleave", () => {
+      link.addEventListener("mouseleave", () => {      
         megaMenu.style.display = "none";
       });
 
       link.addEventListener("click", (e) => {
         e.preventDefault();
-        megaMenu.classList.toggle("active");
+        megaMenu.classList.toggle("active");     
       });
     } 
   });
@@ -1173,7 +1174,7 @@ const products = [
     "id": 1,
     "name": "Galaxy Smooth Milk Chocolate Bars",
     "image": "images/shopping-1.webp",
-    "brandLogo": "icons/svgexport-11 (1).svg",
+    "brandLogo": "images/svgexport-11 (1).svg",
     "packet": "4 x 56 g", 
     "rating": 4.4,
     "reviews": 4944,
@@ -1181,25 +1182,29 @@ const products = [
     "price": 369,
     "originalPrice": 440,
     "discountPercent": 16,
+    "offerMessage": "Buy 2 items, save extra 20",
+    "offerType": "deal",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["4 x 56 g"]
   },
   {
     "id": 2,
     "name": "Galaxy Fruit & Nut Chocolate Bars",
     "image": "images/galaxyfruit.webp",
-    "brandLogo": "icons/svgexport-11 (1).svg",
+    "brandLogo": "images/svgexport-11 (1).svg",
     "packet": "4 x 52 g",
     "rating": 4.3,
     "reviews": 3392,
     "assuredBadge": "images/assured.png",
-    "price": 332,
+    "price": 332,   
     "originalPrice": 396,
     "discountPercent": 16,
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["4 x 52 g"]
   }, 
   {
     "id": 3,         
@@ -1212,9 +1217,11 @@ const products = [
     "price": 563,
     "originalPrice": 630,
     "discountPercent": 10,
+    "offerMessage": "Super Deals",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["3 x 134 g"]
   },
   {
     "id": 4,
@@ -1227,9 +1234,12 @@ const products = [
     "price": 251,
     "originalPrice": 399,
     "discountPercent": 37,
+    "offerMessage": "Buy 2 items, save extra 20",
+    "offerType": "deal",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["32 g"]
   },
   {
     "id": 5,
@@ -1244,7 +1254,8 @@ const products = [
     "discountPercent": 14,
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["250 g"]
   },
   {
     "id": 6,
@@ -1257,9 +1268,12 @@ const products = [
     "price": 326,
     "originalPrice": 480,
     "discountPercent": 32,
+    "offerMessage": "Buy 2 items, save extra 20",
+    "offerType": "deal",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["24 x 20 g"]
   },
   {
     "id": 7,
@@ -1272,9 +1286,12 @@ const products = [
     "price": 570,
     "originalPrice": 600,
     "discountPercent": 5,
+    "offerMessage": "Only few left",
+    "offerType": "urgent",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["5 x 67.2 g"]
   },
   {
     "id": 8,
@@ -1289,13 +1306,14 @@ const products = [
     "discountPercent": 33,
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["240 g"]
   },
   {
     "id": 9,
     "name": "Amul SUGARFREE Dark Chocolate Bar",
     "image": "images/dark.webp",
-    "brandLogo": "icons/svgexport-11 (1).svg",
+    "brandLogo": "images/svgexport-11 (1).svg",
     "packet": "150 g",
     "rating": 4.2,
     "reviews": 557,
@@ -1303,9 +1321,12 @@ const products = [
     "price": 122,
     "originalPrice": 200,
     "discountPercent": 39,
+    "offerMessage": "Buy 2 items, save extra 40",
+    "offerType": "deal",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["150 g"]
   },
   {
     "id": 10,
@@ -1320,12 +1341,13 @@ const products = [
     "discountPercent": 40,
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["2 x 500 g"]
   },
   {
     "id": 11,
     "name": "Cadbury Bournville Fruit & Nut",
-    "image": "icons/svgexport-11 (1).svg",
+    "image": "filpkart/images/bournville-1.webp",
     "packet": "4 x 75 g",
     "rating": 4.4,
     "reviews": 17161,
@@ -1335,8 +1357,9 @@ const products = [
     "discountPercent": 19,
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
-  },
+    "link": "#",
+    "quantities": ["4 x 75 g"]
+  }, 
   {
     "id": 12,
     "name": "Yogabar Protein Minis",
@@ -1348,9 +1371,12 @@ const products = [
     "price": 276,
     "originalPrice": 597,
     "discountPercent": 53,
+    "offerMessage": "Super Deal",
+    "offerType": "deal",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantites": ["3 x 140 g"]
   },
   {
     "id": 13,
@@ -1363,9 +1389,12 @@ const products = [
     "price": 714,
     "originalPrice": 950,
     "discountPercent": 24,
+    "offerMessage": "Super Deal",
+    "offerType": "deal",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["24 x 12.5 g"]
   },
   {
     "id": 14,
@@ -1380,29 +1409,31 @@ const products = [
     "discountPercent": 11,
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["202 g"]
   },
   {
     "id": 15,
     "name": "Parle Melody Packets",
     "image": "images/melodi.webp",
-    "brandLogo": "icons/svgexport-11 (1).svg",
+    "brandLogo": "filpkart/images/svgexport-11 (1).svg",
     "packet": "2 x 391 g",
     "rating": 4.5,
     "reviews": 55,
     "assuredBadge": "images/assured.png",
     "price": 368,
     "originalPrice": 429,
-    "discountPercent": 14,
+    "discountPercent": 14,  
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantities": ["2 x 391 g"]
   },
   {
     "id": 16,
     "name": "Bounty Coconut Chocolate Bar",
     "image": "images/bounty.webp",
-    "brandLogo": "icons/svgexport-11 (1).svg",
+    "brandLogo": "filpkart/images/svgexport-11 (1).svg",
     "packet": "15 x 28.5 g",
     "rating": 4.1,
     "reviews": 137,
@@ -1410,15 +1441,18 @@ const products = [
     "price": 470,
     "originalPrice": 525,
     "discountPercent": 10,
+    "offerMessage": "Buy 2 items,save extra 40",
+    "offerType": "deal",
     "wishlistIcon": "icons/svgexport-10 (1).svg",
     "ratingStarIcon": "icons/svgexport-12 (2).svg",
-    "link": "#"
+    "link": "#",
+    "quantites": ["15 x 28.5 g"]
   }
 ];
 
 const container = document.getElementById('product-list');
 
-products.forEach(p => {
+products.forEach(p => { 
   container.innerHTML += `
     <div class="product-card">
       <a href="${p.link}"> 
@@ -1429,35 +1463,172 @@ products.forEach(p => {
           <img src="${p.wishlistIcon}" alt="wishlist"></button>
         </div>
         <div class="product-info"> 
-          <img src="${p.brandLogo}" class="brand-logo">
+          <img src="${p.brandLogo}" class="brand-logo" alt="${p.brandLogo}">     
           <a class="product-name">${p.name}</a>
           <div class="packet">${p.packet}</div>
           <div class="rating">  
-            <span class = "rate-part">
+            <span class = "rate-part"> 
             <div class = "rating-sct">${p.rating}
-            <img src="${p.ratingStarIcon}" alt="star">
-            </div>
+            <img src="${p.ratingStarIcon}" alt="star"> 
+            </div>               
             </span>
             <span class="reviews">(${p.reviews})</span>
             <div class = "assure-sct">
-            <img  height = "21" src="${p.assuredBadge}" alt="assured" class="assured">
+            <img  height = "21" src="${p.assuredBadge}" alt="assured" class="assured"> 
             </div>
           </div>
-          <a class = "price-part" href = "#" target="_blank" rel="noopener noreferrer">
+          <a class = "price-part" href = "#" target="_blank" rel="noopener noreferrer">  
           <div class = "cost-part">      
           <div class="price">
             ₹${p.price} </div>
-            <div class="original">₹${p.originalPrice}</div> 
+            <div class="original">₹${p.originalPrice}</div>  
             <div class="discount">
               <span>${p.discountPercent}% off</span>
                 </div>
           </div>
         </div>
-      </a>
+        <div class="offer-message">
+          ${p.offerMessage}
+        </div>
+        <div class = "quantity-section">
+          <span class = "quantity-label" >Quantity:</span>
+          <button class="quantity-btn" onclick="toggleQuantityPopUp(this)">
+             ${p.quantities[0]}
+          </button>
+          <div class = "quantity-popup">
+             ${p.quantities.map(q =>  `<div onclick = "selectQuantity(this)">${q}</div>`).join("")}
+          </div>
+      </div>
     </div>
+    </a>
+  </div>
   `;
 });
 </script>
 
+<footer class = "footer">
+  <div class = "footer-top">
+    <div class = "footer-column">
+      <h4>ABOUT</h4>
+      <a href = "#">Contact Us</a>
+      <a href = "#">About Us</a>
+      <a href = "#">Careers</a>
+      <a href = "#">Filpkart Stories</a>
+      <a href = "#">Press</a>
+      <a href = "#">Corporate</a>
+      <a href = "#">Information</a>
+    </div>
+
+    <div class = "footer-column">   
+      <h4>GROUP COMPANIES</h4>
+      <a href = "#">Myntra</a>
+      <a href = "#">Cleartrip</a>
+      <a href = "#">Shopsy</a>
+    </div>
+
+    <div class = "footer-column">
+      <h4>HELP</h4>
+      <a href = "#">Payments</a>
+      <a href = "#">Shipping</a>
+      <a href = "#">Cancellation & Returns</a>
+      <a href = "#">FAQ</a>
+    </div>
+
+    <div class = "footer-column">
+      <h4>CONSUMER POLICY</h4>
+      <a href = "#">Cancellation & Returns</a>
+      <a href = "#">Terms Of Use</a>
+      <a href = "#">Security</a>
+      <a href = "#">Privacy</a>
+      <a href = "#">Sitemap</a>
+      <a href = "#">Grievance</a>
+      <a href = "#">Redressal</a>
+      <a href = "#">EPR</a>
+      <a href = "#">Compiliance</a>
+    </div>
+
+    <div class = "footer-column">
+      <h4>Mail Us:</h4>
+      <p>Filpkart Internet Private Limited,</p>
+      <p>Buildings Alyssa, Begonia &</p>
+      <p>Clove Embassy Tech Village,</p>
+      <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+      <p>Bengaluru, 560103,</p>
+      <p>Karnataka, India</p>
+    </div>
+
+    <div class = "footer-column">
+      <h4>Social</h4>
+      <span class = "">
+        <a href = "#">
+          <img src = "">
+        </a>
+      </span>
+       <span class = "">
+        <a href = "#">
+          <img src = "">
+        </a>
+      </span>
+       <span class = "">
+        <a href = "#">
+          <img src = "">
+        </a>
+      </span>
+       <span class = "">
+        <a href = "#">
+          <img src = "">
+        </a>
+      </span>
+    </div>
+
+    <div class = "footer-column">
+      <h4>Registered Office Address:</h4>
+      <p>Filpkart Internet Private Limited,</p>
+      <p>Buildings Alyssa, Begonia &</p>
+      <p>Clove Embassy Tech Village,</p>
+      <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+      <p>Bengaluru, 560103,</p>
+      <p>Karnataka, India</p>
+      <p>CIN: U51109KA2012PTC066107</p>
+      <p>Telephone: <a href = "tel:044-45614700">044-45614700</a>
+        / <a href = "tel:044-67415800">044-67415800</a>
+      </p>
+    </div>
+  </div>
+
+  <div class = "footer-bottom">
+    <div class = "left">
+      <img src = "filpkart/images/icon.svg">
+      <a href = "#">
+        <span class = "">Become a seller</span>
+      </a>
+    </div>
+    <div class = "left">
+      <img src = "filpkart/images/star.svg">
+      <a href = "">
+        <span class = "">Advertise</span>
+      </a>
+    </div>
+     <div class = "left">
+      <img src = "">
+      <a href = "">
+        <span class = "">Gift Cards</span>
+      </a>
+    </div>
+     <div class = "left">
+      <img src = "">
+      <a href = "">
+        <span class = "">Help Center</span>
+      </a>
+    </div>
+      <div class = "left">
+        <span class = "">&copy; 2007-2025 Filpkart.com</span>
+        <img src = "">
+      </a>
+    </div>
+
+    </div>
+  </div>
+</footer>
 </body>
 </html>   
