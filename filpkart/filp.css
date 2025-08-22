@@ -1535,14 +1535,14 @@ button:hover {
 .pdtimg {
   max-width: 100%;
   max-height: 160px;
-  object-fit: contain;
+  object-fit: contain; 
 }
 
 .wishlist-btn {
-  background: transparent;
+  background: transparent;  
   border: none;
-  position: absolute;
-  /* position: relative; */
+  position: absolute;    
+  /* position: relative; */    
   top: 8px;
   right: 8px;
   cursor: pointer;
@@ -1597,18 +1597,18 @@ button:hover {
 }
 
 .product-name:active {
-    color: #1a5fc2;
+    color: #1a5fc2; 
 }
 
 .packet {
   font-size: 12px;
   color: #878787;
-  margin-bottom: 6px;
+  margin-bottom: 6px;  
 }
 
-.rating {
-  display: flex;
-  align-items: center;
+.rating { 
+  display: flex;      
+  align-items: center;    
   gap: 6px;
   margin-bottom: 6px;
 }
@@ -1624,9 +1624,10 @@ button:hover {
   border-radius: 4px;
 }
 
+
 .rating-sct img {
   width: 10px;
-  margin-left: 2px;
+  margin-left: 2px;   
 }
 
 .reviews {
@@ -1743,10 +1744,10 @@ button:hover {
     background: #fff;
     border-top: 1px solid #e0e0e0;
     display: flex;
-    justify-self: space-between;
-    align-items: center;
+    justify-self: space-between; 
+    align-items: center;            
     padding: 10px;
-    line-height: 32px;
+    line-height: 32px; 
 }
 
 .page-section {
@@ -1755,22 +1756,11 @@ button:hover {
     align-items: center;
     margin: 30px 0;
     gap: 6px;
-    font-family: Arial, sans-serif; */
+    font-family: Arial, sans-serif; */    
     padding: 4px 0;
     text-align: center;
     font-weight: 500;
 }
-/* .page-section a,
-.page-section button {
-    padding: 8px 14px;
-    text-decoration: none;
-    border: 1px solid #ddd; 
-    cursor: pointer;
-    color: #2874f0;
-    background: #fff; 
-    font-size: 14px;
-    border-radius: 2px;
-  } */
 
 .page-scts .sections.pages {
     background: #2874f0;
@@ -1792,42 +1782,20 @@ button:hover {
     line-height: 32px;
     color: #2874f0;
     padding: 0 25px;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;}
+    
 
-/* .page-section a:active {
-    background: #2874f0;
-    color: #fff;
-    border: 1px solid #2874f0;
-    font-weight: bold;
-} */
-
-/* .page-section button:hover,
-.page-section a:hover {
-    background: #f0f577;;
-} */
-
-/* .page-section span {
-    padding: 8px 10px;
-    color: #555;
-} */
 
 .page-scts .nxtpg {
-    display: inline-block;
+    display: inline-block;  
     width: 1px;
     height: 100%;
 }
 
 .feedback {
-    margin: 30px 0;
+    margin: 30px 0;  
     text-align: center;
-    margin-bottom: 12px;
-}
-
-.feedback p {
-    font-size: 15px;
-    color: #212121;
-    margin-bottom: 12px;
+    margin-bottom: 12px;    
 }
 
 .feed {     
@@ -1848,35 +1816,6 @@ button:hover {
     font-weight: 500;
     font-size: 16px;
 }
-/* .feed:hover {
-    background: #f5f5f5;
-}
-.feedback-btn:hover {
-  background: #f5f5f5;
-}
-
-.feedback-btn.yes {
-  color: #2e7d32;
-  border: 1px solid #2e7d32;
-}
-
-.feedback-btn.yes:hover {
-  background: #e8f5e9;
-}
-
-.feedback-btn.no {
-  color: #c62828;
-  border: 1px solid #c62828; 
-}
-
-.feedback.no:hover {
-  background: #ffebee;
-}
-
-.feed.yes {
-    color:#2e7d32;
-    border: 1pxmsolid 
-} */
 
 .feedback .part {
     display: inline-block;
@@ -1894,7 +1833,7 @@ button:hover {
 
 .fdnote .feed {
     user-select: none;
-    font-size: 14px;
+    font-size: 14px;   
     display: inline-block;
     cursor: pointer;
 }
@@ -1916,28 +1855,6 @@ button:hover {
     text-align: left;
 }
 
-/* .footer-column {
-  width: 100%;
-  display: flex;
-  flex-flow:row wrap;
-}
-
-.footer-column a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  margin: 6px 0;
-  font-size: 13px;  
-}
-
-.footer-column a:hover {
-  text-decoration: underline;
-}
-
-.footer-column .teleno {
-  color: #2874f0;
-} */
-
 .row {
     width: 100%;
     display: flex;
@@ -1954,18 +1871,6 @@ button:hover {
     background-color: #fff;
 }
 
-.footer-bottom {
-  border-top: 1px solid #454d5e;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-bottom .right img {
-  height: 24px;     
-}}   
-
 .belowsct {
     flex: 1;
 }
@@ -1975,6 +1880,7 @@ button:hover {
     border: none;
 }
 
-.page-section .next-page:hover {
+.page-section .next-page:hover {  
     background: #0d47a1;
+}
 }
