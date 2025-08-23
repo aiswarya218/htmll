@@ -1835,19 +1835,19 @@ button:hover {
     user-select: none;
     font-size: 14px;   
     display: inline-block;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .footer {
     background: #172337;
     min-width: 978px;
-    border-top: 1px solid #ddd;
-    margin-top: 25px;
+    border-top: 1px solid #ddd;  
+    margin-top: 25px; 
 }
 
 .footer-top {
     /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);  
     gap: 40px; 
     margin-bottom: 30px; */
     width: 100%;
@@ -1868,7 +1868,7 @@ button:hover {
 .column {
     padding: 0 25px;
     color: #878787;
-    background-color: #fff;
+    background-color: #fff;   
 }
 
 .belowsct {
