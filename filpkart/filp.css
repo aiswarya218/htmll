@@ -1837,11 +1837,11 @@ button:hover {
     display: inline-block;
     cursor: pointer; 
 }
-
+ 
 .footer {
     background: #172337;
     min-width: 978px;
-    border-top: 1px solid #ddd;  
+    border-top: 1px solid #ddd;
     margin-top: 25px; 
 }
 
@@ -1877,10 +1877,10 @@ button:hover {
 .page-section .next-page {
     background: #2874f0;
     color: #fff;
-    border: none;
+    border: none; 
 }
 
-.page-section .next-page:hover {  
+.page-section .next-page{ 
     background: #0d47a1;
 }
 }
