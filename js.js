@@ -108,20 +108,3 @@ function toggleFilter() {
         arrow.textContent = "▼";
     }
 }
-
-
-
-
-function toggleFilter() {
-    const content = document.getElementById("filterContent");
-    const arrow = document.getElementById("arrow");
-
-    if (content.classList.contains("hidden")) {
-        content.classList.remove("hidden");
-        arrow.textContent = "▲";
-    }
-    else {
-        content.classList.add("hidden");
-        arrow.textContent = "▼";
-    }
-}
