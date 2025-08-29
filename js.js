@@ -104,7 +104,7 @@ function toggleFilter() {
         arrow.textContent = "▲";
     } 
     else {
-        content.classList.add("hidden");
+        content.classList.add("hidden"); 
         arrow.textContent = "▼";
     }
-}
+  }
