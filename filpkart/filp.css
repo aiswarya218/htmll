@@ -1817,9 +1817,8 @@ button:hover {
     font-size: 16px;
 }
 
-.feedback .part {
+.feedback .part{
     display: inline-block;
-    margin-left: 24px;
     font-size: 16px;
 }
 
