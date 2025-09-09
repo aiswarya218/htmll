@@ -907,12 +907,24 @@ header {
   }
 }  
 
+@media screen and (min-width: 744px) {
+  .house_attri {
+    display: none;
+  }
+  .top-main {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 950px) {
   .house {
     grid-auto-columns: calc(20% - 5.5px); 
   }
   .house_attri {
     display: none; 
+  }
+  .top-main {
+    display: none;
   }
 }
 
@@ -921,6 +933,9 @@ header {
     grid-auto-columns: calc(18% - 5.5px);
   }
   .house_attri {
+    display: none;
+  }
+  .top-main {
     display: none;
   }
 }
