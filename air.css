@@ -6,12 +6,12 @@ body {
 
 @font-face {
   font-family: "extrabold";
-  src: url("./font/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2");
+  src: url(airbnb/fonts/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2)
 }
 
 @font-face {
   font-family: "normal";
-  src: url("./font/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2");
+  src: url(airbnb/fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2)
 }
 
 .top-main {
