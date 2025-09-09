@@ -21,7 +21,7 @@ body {
   z-index: 10;
   background-color: #ffffff;
 }
-
+     
 .top_sct1 {
   position: relative;
   z-index: 1;
@@ -107,7 +107,7 @@ body {
   flex-direction: column;
   min-width: 68px;
   display: flex;
-  margin: 4px 0 6px 0;
+  margin: 4px 0 6px 0; 
 }
 
 .house_attri {
@@ -126,7 +126,7 @@ body {
 }
 
 .home_link {
-  margin-bottom: 8px;
+  margin-bottom: 8px; 
   align-items: center;
   flex-direction: column;
   min-width: 68px;
@@ -149,7 +149,7 @@ body {
   position: relative;
 }
 
-.home_line_bottom {
+.home_spn {
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -165,7 +165,7 @@ body {
   align-items: center;
 }
 
-.text_home {
+.house_title {
   position: relative;
   line-height: 10px;
   font-size: 12.5px;
@@ -297,19 +297,19 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: relative;
+  position: relative;  
   display: inline-block;
   background-size: cover;
 }
 
-.house_img {
+.rooms {
   grid-template-rows: repeat(3, minmax(0, 1fr));
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-areas:
     "top-row top-row top-row"
     "middle-row middle-row middle-row"
     "bottom-row bottom-row bottom-row";
-  /* padding: 12px 12px 0px 12px; */
+  padding: 12px 12px 0px 12px;
   position: absolute;
   display: grid;
 }
@@ -424,7 +424,7 @@ body {
 .footer {
   background: #f7f7f7;
   padding-inline: 24px;
-  margin-inline: auto;
+  margin-inline: auto;   
   padding-block: 48px;
   max-width: 1920px;
   margin-top: 49px;
@@ -475,7 +475,7 @@ body {
   width: 80px;
 }
 
-.house_cnt {
+.unique_stay {
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -549,49 +549,58 @@ body {
   padding-inline: 24px;
   margin-bottom: 15px;
 }
+
 .support {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   column-gap: 16px;
   width: 100%;
   display: grid;
 }
+
 .support_sct {
   grid-column: 1/-1;
   padding-block: 24px;
   margin: 0;
   color: #222222;
   font-family: "extrabold";
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;  
 }
+
 .support_main {
   line-height: 1.125rem;
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 16px;
 }
+
 .support_list {
   gap: 16px;
   list-style: none;
   display: grid;
   padding: 0 !important;
 }
+
 .needs {
   left: 1.125rem;
   font-size: 0.875rem;
   border-radius: 2px;
   color: #222222;
+  white-space: nowrap;
 }
+
 .english {
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid #ebebeb;
   margin-bottom: 8px;
 }
+
 .eng_lng {
   margin-left: 8px;
   margin-bottom: 8px;
   color: #222222;
 }
+
 .eng {
   margin-left: 4px;
   padding: 6px 8px;
@@ -602,6 +611,7 @@ body {
   color: #222222;
   display: inline-flex;
 }
+
 .footer-bottom-content {
   max-width: 1080px;
   margin: 0 auto;
@@ -611,6 +621,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .foot_copy {
   font-size: 14px;
   color: #222;
@@ -755,7 +766,7 @@ header {
     justify-content: flex-start;
   }
 
-  .switch_global {
+  .help_service {
     justify-content: flex-end;
     align-items: center;
     height: 80px;
@@ -763,7 +774,7 @@ header {
     position: relative;
   }
 
-  .services {
+  .help-btn {
     margin-right: 12px;
     justify-content: center;
     align-items: center;
@@ -777,7 +788,7 @@ header {
     border-style: none;
   }
 
-  .global_svg {
+  .help_svg {
     display: block;
     height: 16px;
     width: 16px;
@@ -803,7 +814,6 @@ header {
     border: 1px solid #dddddd;
     border-radius: 9999px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
   }
 
   .search-container input {
@@ -853,7 +863,8 @@ header {
   .house {
     grid-auto-columns: calc(25% - 5.5px);
   }
-  .suppoert_tab {
+
+  .support_tab {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
     row-gap: 24px;
