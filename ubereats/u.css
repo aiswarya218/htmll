@@ -54,16 +54,16 @@
     height: 16px;  
 }
 .join_main{
-margin-right: 12px;
-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04) ;
-background: white;
-min-width: 36px;
-border-radius: 500px;
-width: 36px;
-height: 36px;
-display: flex;
-justify-content: center;
-align-items: center;
+  margin-right: 12px;
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04) ;
+  background: white;
+  min-width: 36px;
+  border-radius: 500px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .signup_sct{
   padding: 8px 12px;
@@ -86,7 +86,6 @@ align-items: center;
   .join_sct{
      display: flex;
   }
-
  .need_sctn{
   top: 46px;
   padding: 6px 16px  8px;
@@ -108,7 +107,7 @@ align-items: center;
   overflow: hidden;
   font-family:'bold';
   display: flex;
-}
+ }
 .need_div svg{
   line-height: 20px;
   margin-top: 2px;
@@ -202,6 +201,12 @@ align-items: center;
   font-family: 'bold';
   font-weight: 500;
 }
+
+.delivery_one{
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
 .search{
   border-radius: 8px;
   min-height: 56px;
@@ -518,21 +523,21 @@ font-family:'bold';
   .map_425{
     display: flex;
   }
-}
+
 .hide-mobile{
   display:none;
 }
  .city_parent {
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(6, 1fr);
-  gap: 10px;
+  gap: 24px;
   grid-auto-flow: column;
   display: grid;
 }
 .content_part{
   grid-template-rows: repeat(15, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px; 
+  gap: 24px; 
   grid-auto-flow: column;
   display: grid;
   margin-top: 24px;
@@ -543,6 +548,7 @@ font-family:'bold';
   font-family: "semi-bold";
   color: #000;
   text-decoration: none;
+}
 }
 
 @media screen and (min-width:768px) {
@@ -557,13 +563,13 @@ font-family:'bold';
  }
  .desk_bgr{
   display: none;
-}
+ }
  .map_768{
   display: flex;
-}
+ }
 .hide-mobile{
   display: inline;
-}
+ }
 .content_part {
   grid-template-rows: repeat(8, 1fr);
   gap: 20px 8px; 
@@ -585,14 +591,14 @@ font-family:'bold';
 }
 
 @media screen  and (min-width:1024px){
-  .log_bgr{
-    display: none;
-  }
+.log_bgr{
+  display: none;
+}
 .login_sct{
   display: flex;
 }
 .login_sct{
- padding: 8px 12px;
+  padding: 8px 12px;
   background:#FFFFFF ;
   color:black;
   border-radius: 500px;
@@ -712,4 +718,10 @@ font-family:'bold';
   .title-icon{
      margin-bottom: 64px;
   }
+  /* .footer{
+     border-top: 1px solid #F3F3F3;
+     margin-top: 80px;
+     padding: 72px 0px 88px;
+     background-color: #ffffffff;
+  } */
 }
