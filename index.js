@@ -18,8 +18,8 @@ function ShowCategories(categoryId, categoryElementsId, heading) {
     DisplayElements.addEventListener('mouseenter', ShowCategoryE1);
     ClickedCategory.addEventListener('mouseleave', HideCategoryE1);
     DisplayElements.addEventListener('mouseleave', HideCategoryE1);
-
 }
+
 ShowCategories('electronics', 'show-electronics');
 ShowCategories('tv-appliances', 'show-tvappliances');
 ShowCategories('men', 'show-men');
@@ -54,12 +54,8 @@ fetch("products.json")
 
 function renderProducts(products) {
     containerONE.innerHTML = "";
-    products.forEach(product => {
-        const pContainer = document.createElement('div');
-        pContainer.classList.add('pContainer');
-      const container = document.getElementById('product-list');
-
-products.forEach(p => { 
+    const container = document.getElementById('product-list');
+ products.forEach(p => { 
   container.innerHTML += `
     <div class="product-card">
       <a href="${p.link}"> 
@@ -110,7 +106,7 @@ products.forEach(p => {
     </a>
   </div>
   `;
-    containerONE.appendChild(pConatiner);
+    containerONE.appendChild(pContainer);
 });
  }
 
@@ -189,7 +185,7 @@ AllcheckBoxes.forEach(cb=>{
 });
 
 function updateSelectedFilters() {
-    const selected = Array.from(AllcheckBoxes).filter(cb=>cb.checked).map(cb=>cb;
+    const selected = Array.from(AllcheckBoxes).filter(cb=>cb.checked).map(cb=>cb);
         selectedFilters.innerHTML = "";
         clearButtonTop.style.display = selected.length > 0 ? 'inline' :'none';
 
@@ -200,7 +196,7 @@ function updateSelectedFilters() {
     <div class = "selected-item" id = "selectedItem">${item}</div>
     </div>
         `;
-    }));
+    });
 
     const intoMarks = selectedFilters.querySelectorAll('.intoMark');
     intoMarks.forEach(into => {
@@ -251,7 +247,7 @@ function enableDragging(pointer,isLeft) {
             let position = Math.min(0, Math.min(e.clientX -rect.left,priceLine.offsetWidth));
 
             let price = positionToClosestPrice(position);
-            let snapPosition = priceToPOsition(price);   
+            let snapPosition = priceToPosition(price);   
             
             pointer.style.left = snapPosition + "px";
             if(isLeft) {
@@ -325,4 +321,3 @@ const clearRatings=document.getElementById('ratingClear');
         clearRatings.style.display = anyChecked ? 'inline-block':"none";
     });
   });
-

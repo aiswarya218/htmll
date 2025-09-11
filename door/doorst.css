@@ -1,21 +1,21 @@
 @font-face {
   font-family: "regular";
-  src: url("/assets/TTNorms-Regular.woff2") format("woff2");
+  src: url(fonts/TTNorms-Regular.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "bold";
-  src: url("/assets/TTNorms-Bold.woff2") format("woff2");
+  src: url(fonts/TTNorms-Bold.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "medium";
-  src: url("/assets/TTNorms-Medium.woff2") format("woff2");
+  src: url(fonts/TTNorms-Medium.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "temp";
-  src: url("./assets/TTNorms-ExtraBold.woff2") format("woff2");
+  src: url(fonts/TTNorms-ExtraBold.woff2) format("woff2");
 }
 
 * {
@@ -112,7 +112,7 @@ body {
   text-align: left;
   text-transform: none;
   overflow: hidden;
-  white-space: normal;
+  white-space: normal; 
   display: flex;
   align-items: center;
 }
@@ -122,7 +122,7 @@ body {
 }
 
 .starhalf {
-  margin-right: 2px;
+  margin-right: 2px; 
 }
 
 .rating {
@@ -405,14 +405,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 24px;  
-  pointer-events: none;
+  pointer-events: none; 
 }
 
 .del-address {
   display: flex;
   flex-grow: 1;
   background-color: #ffff;
-  max-width: 100%;
+  max-width: 100%;  
   margin-right:12px ;
 }
 
@@ -473,7 +473,7 @@ body {
 }
 
 .d-button {
-   margin-top: 16px;
+  margin-top: 16px;
   position: relative;
   max-width: 100%;
   padding: 0px;
@@ -622,7 +622,7 @@ body {
   color: #191919ff;
   font-family: "bold";
   font-size: 18px;
-  line-height: 20px;
+  line-height: 20px; 
   letter-spacing: -0.01px;
   display: block;
   text-overflow: ellipsis;
@@ -761,6 +761,16 @@ body {
   padding: 0px;
 }
 
+.neigh-city{
+  text-align: center;
+  color: #191919ff;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01px;
+  line-height: 40px;
+  margin: 0px 0px 20px 0px;
+  font-family: "bold";
+}
 /* .dash-delivery_a {
   max-width: 768px;
   margin: 0px auto;
@@ -907,6 +917,10 @@ body {
   padding: 0px;
 }
 
+.cv-store_1 {
+  display: none;
+}
+
 .rest-sub_div {
   text-align: left;
   font-family: "bold";
@@ -915,6 +929,19 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 22px;
+  letter-spacing: -0.01px;
+  display: block;
+  padding: 0px;
+}
+
+.sub_headings {
+  text-align: left;
+  font-family: "medium";
+  margin: 10px 0px 0px;
+  color: #191919ff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
   letter-spacing: -0.01px;
   display: block;
   padding: 0px;
@@ -952,6 +979,10 @@ body {
   text-align: center;
   background-color: #eb1700ff;
   color: #ffffff;
+}
+
+.partner {
+  margin-top: 20px;
 }
 
 .promo-partner_d {
@@ -1245,7 +1276,7 @@ body {
   text-align: center;
 }
 
-.grocery_main {
+.grocery-box {
   position: relative;
   max-width: 100%;
   margin: 0px;
@@ -2085,7 +2116,7 @@ display: none;
   .sign_btn{
   display:flex;
 }
-.tab3-sct-first-class{
+.tab3-sct{
   display: none;
 }
 .sct-sign{
@@ -2189,7 +2220,6 @@ flex-direction: row-reverse;
 justify-content: center;
 margin-bottom: -60px;
 padding: 20px;
-
 }
 .restaurantfood_c{
   max-width: 1184px;
@@ -2220,6 +2250,7 @@ padding: 20px;
   font-size: 16px;
   line-height: 22px;
   margin-top:10px;
+  font-family: "medium";
 }
 .all_rest{
   margin-top: 30px;
@@ -2249,12 +2280,11 @@ align-items: center;
 gap: 60px; 
 margin-top:0px;
 }
-.dash-pass img{
+.dash_head img{
 width: 100%;
 height: 500px;
 object-fit: cover;
 }
-
 .grocery-page {
   position: relative;
   height: 600px;
@@ -2291,16 +2321,15 @@ justify-content:center;
   font-weight: 500;
   line-height: 22px;
 }
-
-.grocery_main{
+.grocery_box{
   min-height: 40px; 
 }
-
 .grocery-btn{
 font-size: 16px;
 font-weight: 500;
 line-height: 22px;
-letter-spacing: -0.01px;  
+letter-spacing: -0.01px; 
+align-items: center;
 }
 .dash_details {
   font-size: 40px;
@@ -2316,7 +2345,6 @@ letter-spacing: -0.01px;
   line-height: 22px;
   letter-spacing: -0.01px;
 }
-
 .dash_main_details {
  margin-top: 20px;
   font-size: 16px;
@@ -2351,6 +2379,14 @@ display: block;
   font-weight: 500;
   line-height: 22px;
 }
+
+.fee_sct_c {
+  font-family: "bold";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
 .door-convenience{
   padding:60px 20px 20px 20px ;
   margin-bottom: -40px;
@@ -2374,19 +2410,18 @@ font-family:'bold';
 .cv-store_1{
   display: block;
 }
-
 .cv-store_1{
   height: 500px;
   width: 100%;
   object-fit: cover;
   margin-bottom: 4px;;
 } 
-.dash-pass{
+.dash_head {
   height: 504.8px;
 }
-.grocery-btn{
+/* .grocery-btn{
   margin-top: 30px;
-}
+} */
 .buy_one_c {
  font-family:"bold";
  font-size: 16px;
@@ -2410,6 +2445,7 @@ font-family:"medium";
 /* .convenience{
   height:584px ;
 } */
+
 .gift-center{
 display: flex;
 justify-content: center;
@@ -2453,39 +2489,32 @@ object-fit: cover;
 object-position: center;
 aspect-ratio: 1 / 1;
 } 
-
-.package-gift-done{
+.package-gift-done{  
     margin: unset;
     max-width: 50%;
     min-width: 50%;
 }
-
 .package-gift{
   flex-wrap: wrap; 
 }
-
 .opportunity{
  padding: 60px 20px 40px;
 }
-
 .opportunity_sct{
 text-align:center;
 max-width: 500px;
 font-size: 32px;
 line-height: 40px;
 }
-
 .man_with_bag{
 width: 100%;
 height: 500px;
 object-fit: cover;
 }
-
 .b-img{
-  height: 500px;
+  height: 500px;  /*width:700px;*/
   width: 100;
 }
-
 .deli_business{
 font-family: "bold";
 font-size: 40px;
@@ -2632,6 +2661,7 @@ color:#606060ff;
   font-size: 16px;
   line-height: 22px;
   margin-top: 20px;
+  font-family: "medium";
 }
 .footer_sct h2{
   text-align: left;
@@ -2696,12 +2726,51 @@ height: 18px;
   margin-left: 12px;
 }
 .titlename {
-  transform: translateY(-205.6px);
+  transform: translateY(-205.6px); 
    margin-block: 24px;
 }
 .restaurantfood_c svg{
 object-position: center;
 aspect-ratio: 1 / 1;
+}
+.grocery_pg_a {
+  text-align: center;
+  color: white;
+  filter: drop-shadow((0, 0, 0, 0.2) 0px 2px 8px);
+  max-width: 90%;
+  margin: 20px 0px 0px;
+  font-family: "medium";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01px;
+  text-decoration: none;
+}
+
+.grocery_pg_b {
+  text-align: center;
+  color: white;
+  filter: drop-shadow((0, 0, 0, 0.2) 0px 2px 8px); 
+  margin-top: 10px;
+  font-family: "bold";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01px; 
+  text-decoration: none;
+}
+
+.grocery_pg_c {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  font-family: "medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+  text-decoration: none;
+  padding: 0;
 }
 .cv-img {
 width: 100%;
@@ -2784,7 +2853,6 @@ width: 154px;
  text-align:center;
 font-size: 18px;
 }
-
 .open_container{
 margin-top: 8px;
 } 
@@ -2798,8 +2866,7 @@ margin: 13px 0 0 0;
   margin: 0 auto;
 }
 .cv_sct{
-margin-bottom:173.158px;;
-
+margin-bottom:173.158px;
 }
 .restaurantfood_c img{
   margin-bottom:5px ;
@@ -2825,71 +2892,58 @@ margin-bottom:173.158px;;
     margin: 0 auto;
     justify-content: center;
    }
-   .dash-pass{
+   .dash_one{
    width: 724px;
    }
  .dash{
   max-width: 1184px;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: center;  
 }  
-
 .dashpass-main{
    background-color: (254 241 238);
 }
-
 .door-convenience{
   width: 100%;
 }
-
 .store_title{
   max-width: 89%;
 }
-
 .cv-img{
   aspect-ratio: unset;
 }  
-
 .cv_sct{
   margin: 0;
 } 
-
 .door-convenience{
 max-width: 1184px;
 margin: 0 auto;
 margin-bottom: -40px;
 }
-
 .cv-store_1{
   width: unset;
 }
-
 .door-convenience{
 padding: 60px 15px 20px 15px;
 }
-
 .package{
   background-color:rgb(254, 241, 238);
 }
-
 .dpackage-gift{
   max-width: 1184px;
   margin: 0 auto;
 }
-
 .footer{
   background-color: #191919ff;
 }
-
 .footer_mainsct{
   max-width: 1184px;
   margin: 0 auto;
 }
- .vol-sct{
+.vol-sct{
   background-color:rgb(254, 241, 238);
 }
-
- .vol_main{
+.vol_main{
   max-width: 1184px;
   margin: 0 auto;
   justify-content: center;
