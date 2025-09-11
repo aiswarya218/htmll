@@ -1382,7 +1382,6 @@ strong{
     min-width:unset;
     position:relative;
     background-color:white;
-
 }
 .common-card{
     margin:0;
@@ -2473,6 +2472,10 @@ max-width:1200px;
     font-size: 24px;
     line-height: 52px;
     margin: 0px 20px 8px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    items-aligned: center;
     font-family: 'Source Sans Pro', Arial, sans-serif;
     max-width: 100%;
     flex-grow: 0;
