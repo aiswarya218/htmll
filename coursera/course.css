@@ -361,6 +361,9 @@ header{
       letter-spacing:-0.003em;
       color:#0f1114;
 }
+.blue_sub{
+    color:rgb(0, 123, 255);
+}
 .search{
     display:none;
 }
@@ -2262,6 +2265,10 @@ max-width:1200px;
     padding:0;
     margin-bottom:.625rem;
     font-size:.875rem;
+    list-style: none;
+}
+.footer-lists a:hover{
+    text-decoration: underline;
 }
 .footercolumn-name{
         display: block;
@@ -2485,4 +2492,4 @@ max-width:1200px;
     margin:-8px;
     width:calc(100%+16px);
     justify-content: center;
-}   
+} 

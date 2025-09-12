@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proximity</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: #111;
+                overflow: hidden;
+            }
+
+            .box{
+                width: 150px;
+                height: 150px;
+                background: #444;
+                border-radius: 12px;
+                transition: all 0.2s ease;
+                box-shadow: 0 0 0 rgba(0, 250, 255, 0);
+            }
+        </style>
+    </head>
+<body>
+    <div class="box"></div>
+    <script>
+        const box = document.querySelector('.box');
+        document.addEventListener('mousemove', e => {
+            const rect = box.getBoundingClientRect();
+            const boxX = rect.left + rect.width / 2;
+            const boxY = rect.top + rect.height / 2;
+
+            const dx = e.clientX - boxX;
+            const dy = e.clientY - boxY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 250) {
+                const intensity = Math.max(0, 1 - distance / 250);
+
+                box.style.background = `rgba(0, 200, 255, ${0.5 + intensity * 0.5})`;
+                box.style.transform = `scale(${1 + intensity * 0.3}) translate(${dx * 0.05}px, ${dy * 0.05}px)`;
+                box.style.boxShadow = `0 0 ${50 * intensity}px rgba(0, 200, 255, ${0.8 * intensity})`;
+            }
+            else {
+                box.style.background = "#444";
+                box.style.transform = "scale(1) translate(0, 0)";
+                box.style.boxShadow = "0 0 0 rgba(0, 200, 255, 0)";
+            }
+        }); 
+    </script>
+</body>
+</html>
