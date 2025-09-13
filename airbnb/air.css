@@ -650,6 +650,7 @@ body {
   margin: 10px 0;
   display: flex;
   gap: 15px;
+  margin-left: 10px;
 }
 
 .footer-social svg {

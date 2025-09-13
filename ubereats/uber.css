@@ -363,6 +363,15 @@ font-family:'bold';
   color: #000;
   font-family:"bold";
 }
+.all_ones1{
+  text-decoration: underline;
+  margin-top: 24px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  font-family:"bold";
+}
 .all_nations {
   margin-top: 48px;
   margin-inline: 16px;
@@ -393,6 +402,15 @@ font-family:'bold';
   text-decoration: none;
 }
 .shown{
+  text-decoration: underline;
+  margin-top: 24px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  font-family:"bold";
+}
+.country{
   text-decoration: underline;
   margin-top: 24px;
   line-height: 20px;
@@ -535,6 +553,37 @@ font-family:'bold';
   .map_425{
     display: flex;
   }
+  .hide-mobile{
+  display:none;
+}
+ .city_parent {
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(6, 1fr);
+  gap: 24px;
+  grid-auto-flow: column;
+  display: grid;
+}
+.content_part{
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px; 
+  grid-auto-flow: column;
+  display: grid;
+  margin-top: 24px;
+}
+.content_part span{
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "semi-bold";
+  color: #000;
+  text-decoration: none;
+}
+.country{
+  display: none;
+}
+.all_ones1{
+  display: none;
+}
 }
 
 @media screen and (min-width:425px) {
