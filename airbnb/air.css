@@ -6,12 +6,12 @@ body {
 
 @font-face {
   font-family: "extrabold";
-  src: url(airbnb/fonts/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2)
+  src: url(fonts/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2)
 }
 
 @font-face {
   font-family: "normal";
-  src: url(airbnb/fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2)
+  src: url(fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2)
 }
 
 .top-main {
@@ -211,10 +211,15 @@ body {
 }
 
 .living_part {
-  margin: 0;
+  /* margin: 0;
   align-items: center;
   display: flex;
-  column-gap: 4px;
+  column-gap: 4px; */
+   position: relative;
+   display: flex;
+   gap: 8px;
+   justify-content: flex-end;
+   margin: 20px;
 }
 
 .living {
@@ -224,7 +229,7 @@ body {
 .living_home {
   align-items: center;
   display: flex;
-  margin: 32px 24px 14px;
+  margin: 32px 24px 3px;
   justify-content: space-between;
 }
 
@@ -314,6 +319,15 @@ body {
   display: grid;
 }
 
+/* .room_spn {
+  background-clip: border-box;
+  padding-line: 9.5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  box-shadow:
+
+} */
+
 .room_fav {
   grid-template-columns: repeat(2, minmax(min-content, auto));
   grid-area: top-row;
@@ -321,7 +335,7 @@ body {
   display: grid;
 }
 
-.room_fav1 {
+.room_spn {
   justify-self: flex-start;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -336,6 +350,7 @@ body {
   height: fit-content;
   display: inline-flex;
   color: #222222;
+  white-space: nowrap;
 }
 
 .guest {
@@ -368,7 +383,7 @@ body {
   font-weight: 600;
   padding: 2px 0 0;
   margin: -1px 0 0;
-  display: inline-flex;
+  display: inline-flex; 
   border-radius: 50%;
   border: none;
   background-color: transparent;
@@ -380,6 +395,36 @@ body {
   height: 24px;
   width: 24px;
 }
+
+.btn-1 {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      column-gap: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background 0.2s;
+    }
+
+    .btn-1:hover {
+      background-color: #f2f2f2;
+    }
+
+    .btn-1:active {
+      background-color: #e6e6e6;
+    }
+
+    .btn-1 span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+      user-select: none;
+    }
 
 .apartment {
   margin-inline-end: 4px;
@@ -625,32 +670,33 @@ body {
 .foot_copy {
   font-size: 14px;
   color: #222;
+  font-family: "normal";
 }
 
 .foot_copy a {
   color: #222;
   text-decoration: none;
   margin: 0 8px;
-  font-family: "normal";
 }
 
 .foot_privacy {
   font-size: 14px;
   color: #222;
+  font-family: "normal";
 }
 
 .foot_privacy a {
   color: #222;
   text-decoration: none;
   margin: 0 8px;
-  font-family: "normal";
 }
 
 .footer-social {
   margin: 10px 0;
   display: flex;
   gap: 15px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  padding-left: 24px;
 }
 
 .footer-social svg {
@@ -742,10 +788,10 @@ header {
 
   .home_part {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; 
     height: 36px;
     gap: 16px;
-    margin-top: 15px;
+    margin-top: 12px;
   }
 
   .nav_body {
@@ -758,8 +804,7 @@ header {
 
   .new_txt {
     padding: 3px 6px;
-    box-shadow: 0 0.953955px 1.90791px rgba(60, 77, 107, 0.25),
-      0 3.81582px 5.72373px rgba(60, 77, 107, 0.25), inset 0 0 2px 0.5px #001c40,
+    box-shadow: 0 0.953955px 1.90791px rgba(60, 77, 107, 0.25), 0 3.81582px 5.72373px rgba(60, 77, 107, 0.25), inset 0 0 2px 0.5px #001c40,
       inset 0 -1px 3px #d7ebff;
     background: linear-gradient(
       357.5deg,
@@ -863,7 +908,7 @@ header {
     justify-content: center;
     margin-left: auto;
     position: absolute;
-    right: 30px;
+    right: 30px;     
   }
 
   .search-all {
