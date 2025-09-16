@@ -295,7 +295,7 @@ body {
   width: 100%;
   background-position: 50% 50%;
   display: flex;
-  aspect-ratio: 20/19;
+  aspect-ratio: 20/19; 
 }
 
 .house_img {
@@ -331,7 +331,7 @@ body {
 .room_fav {
   grid-template-columns: repeat(2, minmax(min-content, auto));
   grid-area: top-row;
-  grid-column-gap: 8px;
+  grid-column-gap: 65px;
   display: grid;
 }
 
@@ -446,7 +446,7 @@ body {
   color: #6a6a6a;
   display: flex;
   position: relative;
-  font-family: "normal";
+  font-family: "normal"; 
 }
 
 .stars {
@@ -720,6 +720,22 @@ header {
   display: none;
 }
 
+@media screen and (min-width: 200px) {
+    .room_fav {
+  grid-template-columns: repeat(2, minmax(min-content, auto));
+  grid-area: top-row;
+  grid-column-gap: 5px;
+  display: grid;
+}
+}
+@media screen and (min-width:370px) {
+    .room_fav {
+  grid-template-columns: repeat(2, minmax(min-content, auto));
+  grid-area: top-row;
+  grid-column-gap: 10px;
+  display: grid;
+}
+}
 /* tab css */
 
 /* @media screen and (max-width:744px) {
@@ -728,6 +744,23 @@ header {
     }
 
 } */
+@media screen and (min-width:481px) {
+    .room_fav {
+  grid-template-columns: repeat(2, minmax(min-content, auto));
+  grid-area: top-row;
+  grid-column-gap: 65px;
+  display: grid;
+}
+}
+
+@media screen and (min-width:601px) {
+    .room_fav {
+  grid-template-columns: repeat(2, minmax(min-content, auto));
+  grid-area: top-row;
+  grid-column-gap: 100px;
+  display: grid;
+}
+}
 
 @media screen and (min-width: 744px) {
   .nav_container {
@@ -936,7 +969,6 @@ header {
   .house {
     grid-auto-columns: calc(25% - 5.5px);
   }
-
   .support_tab {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -960,6 +992,12 @@ header {
   .top-main {
     display: none;
   }
+  .room_fav {
+  grid-template-columns: repeat(2, minmax(min-content, auto));
+  grid-area: top-row;
+  grid-column-gap: 80px;
+  display: grid;
+}
 }
 
 @media screen and (min-width: 950px) {
@@ -972,6 +1010,12 @@ header {
   .top-main {
     display: none;
   }
+  .room_fav {
+  grid-template-columns: repeat(2, minmax(min-content, auto));
+  grid-area: top-row;
+  grid-column-gap: 30px;
+  display: grid;
+}
 }
 
 @media screen and (min-width: 1128px) {
@@ -984,4 +1028,10 @@ header {
   .top-main {
     display: none;
   }
+  .room_fav {
+  grid-template-columns: repeat(2, minmax(min-content, auto));
+  grid-area: top-row;
+  grid-column-gap: 50px;
+  display: grid;
+}
 }

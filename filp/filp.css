@@ -6,7 +6,6 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        /* Color Variables for Consistency */
         :root {
             --primary-blue: #2874f0;
             --secondary-gray: #f0f0f0;
@@ -26,7 +25,6 @@
             color: inherit;
         }
 
-        /* Navigation Bar (.navbar-container) */
         .navbar-container {
             background-color: var(--primary-blue);
             height: 56px;
@@ -53,7 +51,6 @@
             gap: 30px;
         }
 
-        /* Logo and "Explore Plus" Section */
         .elements-one {
             display: flex;
             flex-direction: column;
@@ -84,7 +81,6 @@
             margin-left: 3px;
         }
 
-        /* Search Bar (.search-feild) */
         .search-feild {
             flex-grow: 1;
             max-width: 560px;
@@ -126,7 +122,6 @@
             justify-content: center;
         }
 
-        /* Right Navigation Links (.login, .seller, .more, .cart) */
         .login a,
         .seller a,
         .more,
@@ -167,7 +162,6 @@
             width: 14px;
         }
 
-        /* Under-Navigation (.undernav) */
         .undernav {
             background-color: var(--white);
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
@@ -199,7 +193,6 @@
             margin-left: 5px;
         }
 
-        /* Dropdown Menus (.categories-lists) */
         .categories-lists {
             position: absolute;
             top: 112px;
@@ -241,7 +234,6 @@
             color: var(--primary-blue);
         }
 
-        /* Filter Section (.filter-side) */
         .products-section {
             display: flex;
             justify-content: center;
@@ -305,3 +297,144 @@
             color: var(--primary-blue);
             cursor: pointer;
         }
+
+footer {
+  background-color: #172337; 
+  color: #fff;
+  font-size: 12px;
+  padding: 40px 60px 20px;
+}
+
+.footer-start {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #454d5e;
+  padding-bottom: 20px;
+}
+
+.main-footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-sections-container {
+  min-width: 150px;
+}
+
+.section-heading span {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.common-footer-text {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 6px 0;
+  transition: color 0.2s;
+}
+
+.common-footer-text:hover {
+  color: #2874f0; /* Flipkart blue */
+}
+
+.mail-main-section {
+  min-width: 200px;
+}
+
+.mail-us-heading {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 10px 0;
+  display: block;
+}
+
+.mail-us-lists .details p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #fff;
+}
+
+.social-networks-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.social-network-holder svg {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-network-holder:hover svg {
+  transform: scale(1.2);
+}
+
+.address {
+  min-width: 250px;
+}
+
+.address-container .section-heading span {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.address .details p {
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-footer div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.bottom-footer div:hover span {
+  color: #2874f0;
+}
+
+.bottom-footer img {
+  height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  .main-footer-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bottom-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}

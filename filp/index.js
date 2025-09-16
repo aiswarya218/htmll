@@ -321,3 +321,27 @@ const clearRatings=document.getElementById('ratingClear');
         clearRatings.style.display = anyChecked ? 'inline-block':"none";
     });
   });
+   products.forEach(product => {
+      const card = document.createElement("div");
+      card.classList.add("product-card");
+
+      card.innerHTML = `
+        <img src="${product.image}" alt="${product.product_name}">
+        <div class="product-name">${product.product_name}</div>
+        <div>
+          <span class="price">${product.price.current_price}</span>
+          <span class="original-price">${product.price.original_price}</span>
+          <span class="discount">${product.price.discount_percentage}</span>
+        </div>
+        <div class="rating">⭐ ${product.rating.score} | ${product.rating.total_ratings} | ${product.rating.total_reviews}</div>
+        <div class="specs">
+          <div><b>RAM:</b> ${product.specifications.ram}</div>
+          <div><b>ROM:</b> ${product.specifications.rom}</div>
+          <div><b>Display:</b> ${product.specifications.display}</div>
+          <div><b>Battery:</b> ${product.specifications.battery}</div>
+        </div>
+        <div class="offer">✅ ${product.offers.bank_offer || ""} ${product.offers.exchange_offer ? "| " + product.offers.exchange_offer : ""} ${product.offers.phones_left || ""}</div>
+      `;
+
+      productList.appendChild(card);
+    });
